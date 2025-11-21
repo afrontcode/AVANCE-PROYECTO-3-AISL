@@ -43,8 +43,8 @@ jobs:
 
       - name: Variables de entorno secretas   # 3er step
         env:
-          USER_SECRET: ${{ secrets.user }}
-          PASSWORD_SECRET: ${{ secrets.password }}
+          USER_SECRET: ${{ secrets.USER_SECRET }}
+          PASSWORD_SECRET: ${{ secrets.PASSWORD_SECRET }}
         run: |
           echo "user: $USER_SECRET"
           echo "password: $PASSWORD_SECRET"
